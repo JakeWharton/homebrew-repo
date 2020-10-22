@@ -1,4 +1,4 @@
-class DependencyTreeDiff < Formula
+class AsciinemaVsync < Formula
   desc "Batch the commands inside an Asciinema JSON file to reduce flickering"
   homepage "https://github.com/JakeWharton/asciinema-vsync"
   url "https://github.com/JakeWharton/asciinema-vsync/releases/download/1.0.0/asciinema-vsync.jar"
