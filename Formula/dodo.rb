@@ -1,9 +1,9 @@
 class Dodo < Formula
   desc "Synchronize your Twitter timeline to a local database for archival and search"
   homepage "https://github.com/JakeWharton/dodo"
-  url "https://github.com/JakeWharton/dodo/releases/download/1.0.0/dodo.zip"
-  version "1.0.0"
-  sha256 "5436975f246216c55777432aec746bedb552a5660feeb90476c1b02a671190e5"
+  url "https://github.com/JakeWharton/dodo/releases/download/1.1.0/dodo.zip"
+  version "1.1.0"
+  sha256 "1225b00fd272da865197a5170b5f166907074beeca5bdecbabf1bd78e98ca7a9"
 
   bottle :unneeded
 
