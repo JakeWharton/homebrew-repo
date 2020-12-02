@@ -1,9 +1,9 @@
 class DockerfileShebang < Formula
   desc "Treat your Dockerfiles as self-contained, editable scripts."
   homepage "https://github.com/JakeWharton/dockerfile-shebang"
-  url "https://github.com/JakeWharton/dockerfile-shebang/releases/download/1.0.0/dockerfile-shebang"
-  version "1.0.0"
-  sha256 "f9f65b41341f4441dc7005b50cf1b9640d3121614b4138ea02eb46ce02767510"
+  url "https://github.com/JakeWharton/dockerfile-shebang/releases/download/1.1.0/dockerfile-shebang"
+  version "1.1.0"
+  sha256 "51016778b03e570afed6e0b878d0083525d7c8b5e44560ed15a04bb8a0d1f503"
   head "https://github.com/JakeWharton/dockerfile-shebang.git"
 
   bottle :unneeded
