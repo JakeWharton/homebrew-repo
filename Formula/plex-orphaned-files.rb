@@ -1,9 +1,9 @@
 class PlexOrphanedFiles < Formula
   desc "Find files in your Plex libraries which are not indexed by Plex."
   homepage "https://github.com/JakeWharton/plex-orphaned-files"
-  url "https://github.com/JakeWharton/plex-orphaned-files/releases/download/1.0.0/plex-orphaned-files.zip"
-  version "1.0.0"
-  sha256 "9589e0926adfbc67b3e6590a2ff241ced013889b950ac73e4a2c89a760e109a4"
+  url "https://github.com/JakeWharton/plex-orphaned-files/releases/download/1.1.0/plex-orphaned-files.zip"
+  version "1.1.0"
+  sha256 "c4845ea207e6d300e7010dd39eec0223b08a991362c6ded9bd94c62dca7bcc8b"
 
   bottle :unneeded
 
