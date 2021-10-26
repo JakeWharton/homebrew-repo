@@ -5,8 +5,6 @@ class PlexOrphanedFiles < Formula
   version "1.1.1"
   sha256 "909e5f59f2a4ae1aa284f6c29182f43ed1c42a30be89809652c2fd1604066f83"
 
-  bottle :unneeded
-
   depends_on "openjdk"
 
   def install

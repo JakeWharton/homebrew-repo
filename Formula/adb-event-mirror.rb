@@ -5,8 +5,6 @@ class AdbEventMirror < Formula
   version "1.0.0"
   sha256 "ed1e09ac335e73ed193febbfd7748dfbe234c3f02c8054983fa46df5b3589280"
 
-  bottle :unneeded
-
   depends_on "kotlin"
 
   def install
