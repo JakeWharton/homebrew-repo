@@ -5,8 +5,6 @@ class Diffuse < Formula
   version "0.1.0"
   sha256 "60d619373c46a5d06b8126c1d61e0adc18b72f2cbb9245ef920d3387e44b86cf"
 
-  bottle :unneeded
-
   depends_on "openjdk"
 
   def install

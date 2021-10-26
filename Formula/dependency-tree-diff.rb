@@ -5,8 +5,6 @@ class DependencyTreeDiff < Formula
   version "1.2.0"
   sha256 "5d383b4413864c2437818ccdd71b9995e9983482da33382aad6dd62885e90bbd"
 
-  bottle :unneeded
-
   depends_on "openjdk"
 
   def install

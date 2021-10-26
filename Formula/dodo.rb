@@ -5,8 +5,6 @@ class Dodo < Formula
   version "1.1.0"
   sha256 "1225b00fd272da865197a5170b5f166907074beeca5bdecbabf1bd78e98ca7a9"
 
-  bottle :unneeded
-
   depends_on "openjdk"
 
   def install
