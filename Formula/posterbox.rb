@@ -1,4 +1,4 @@
-class PosterBox < Formula
+class Posterbox < Formula
   desc "Rotating display of Movie and TV posters"
   homepage "https://github.com/JakeWharton/PosterBox"
   url "https://github.com/JakeWharton/PosterBox/releases/download/0.1.0/posterbox.zip"
