@@ -1,9 +1,9 @@
 class DependencyWatch < Formula
   desc "Script to wait for an artifact to appear on Maven Central or to monitor coordinates for new versions"
   homepage "https://github.com/JakeWharton/dependency-watch"
-  url "https://github.com/JakeWharton/dependency-watch/releases/download/0.4.1/dependency-watch.zip"
-  version "0.4.1"
-  sha256 "87501637b2499c62b4de89cc5a053f164126dcaf4d4d2a77ad5ed3a225dfc59e"
+  url "https://github.com/JakeWharton/dependency-watch/releases/download/0.5.0/dependency-watch.zip"
+  version "0.5.0"
+  sha256 "d8d4ccd9a6f6ee14b46e0f14b07750aae00ab49651949f7c9ddbc823e68ff000"
 
   depends_on "openjdk"
 
