@@ -1,9 +1,9 @@
 class DependencyTreeDiff < Formula
   desc "An intelligent diff tool for the output of Gradle's dependencies task"
   homepage "https://github.com/JakeWharton/dependency-tree-diff"
-  url "https://github.com/JakeWharton/dependency-tree-diff/releases/download/1.2.0/dependency-tree-diff.jar"
-  version "1.2.0"
-  sha256 "5d383b4413864c2437818ccdd71b9995e9983482da33382aad6dd62885e90bbd"
+  url "https://github.com/JakeWharton/dependency-tree-diff/releases/download/1.2.1/dependency-tree-diff.jar"
+  version "1.2.1"
+  sha256 "f6c84d5ce8beb3277103fb8235071dd8bc69a7cde75239f636a7c8293ff0c865"
 
   depends_on "openjdk"
 
