@@ -3,7 +3,7 @@ class Diffuse < Formula
   homepage "https://github.com/JakeWharton/diffuse"
   url "https://github.com/JakeWharton/diffuse/releases/download/0.2.0/diffuse-0.2.0.zip"
   version "0.2.0"
-  sha256 "60d619373c46a5d06b8126c1d61e0adc18b72f2cbb9245ef920d3387e44b86cf"
+  sha256 "ddc121691effa716c909fb4571f19f20ba5d2f16099c1b5ce44f2657a9dec66b"
 
   depends_on "openjdk"
 
