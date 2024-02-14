@@ -1,0 +1,30 @@
+name: Diffuse
+
+on:
+  push:
+    branches:
+      - trunk
+    paths:
+      - '.github/workflows/diffuse.yml'
+      - 'Formula/diffuse.rb'
+  pull_request:
+    paths:
+      - '.github/workflows/diffuse.yml'
+      - 'Formula/diffuse.rb'
+
+jobs:
+  install:
+    runs-on: macos-latest
+    env:
+      HOMEBREW_COLOR: 1
+      HOMEBREW_DEVELOPER: 1
+    steps:
+      - uses: actions/checkout@v4
+      - name: brew pull & reset & tap
+        run: |
+          brew update-reset "$(brew --repository)"
+          brew update-reset "$(brew --repository homebrew/cask)"
+          mkdir -p $(brew --repo)/Library/Taps/JakeWharton
+          ln -s $GITHUB_WORKSPACE $(brew --repo)/Library/Taps/JakeWharton/homebrew-repo
+      - run: brew install diffuse
+      - run: brew uninstall diffuse
