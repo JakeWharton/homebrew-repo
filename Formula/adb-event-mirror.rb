@@ -1,5 +1,5 @@
 class AdbEventMirror < Formula
-  desc "Mirror the touch/key/button events of one device onto one or more other devices in real-time"
+  desc "Mirror the touch/key/button events of one device onto devices in real-time"
   homepage "https://github.com/JakeWharton/adb-event-mirror"
   url "https://github.com/JakeWharton/adb-event-mirror/releases/download/1.0.0/adb-event-mirror.main.kts"
   version "1.0.0"
@@ -8,8 +8,8 @@ class AdbEventMirror < Formula
   depends_on "kotlin"
 
   def install
-    system "chmod", "+x", "adb-event-mirror.main.kts"
     libexec.install "adb-event-mirror.main.kts"
+    (libexec/"adb-event-mirror.main.kts").chmod 0755
     (bin/"adb-event-mirror").write_env_script libexec/"adb-event-mirror.main.kts", {}
   end
 

@@ -8,10 +8,10 @@ class HardcoverDataSync < Formula
   depends_on "openjdk"
 
   def install
-    rm_f Dir["bin/*.bat"]
+    rm(Dir["bin/*.bat"])
     libexec.install %w[bin lib]
     (bin/"hardcover-data-sync").write_env_script libexec/"bin/hardcover-data-sync",
-      :JAVA_HOME => "${JAVA_HOME:-#{Formula["openjdk"].opt_prefix}}"
+      JAVA_HOME: "${JAVA_HOME:-#{Formula["openjdk"].opt_prefix}}"
   end
 
   test do

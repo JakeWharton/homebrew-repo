@@ -1,5 +1,5 @@
 class SingularSolution < Formula
-  desc "Keep your Twitter follower count at zero by blocking and then quickly unblocking any new followers"
+  desc "Auto-block and unblock new Twitter followers to keep count zero"
   homepage "https://github.com/JakeWharton/singular-solution"
   url "https://github.com/JakeWharton/singular-solution/releases/download/2.0.0/singular-solution.zip"
   version "2.0.0"
@@ -8,10 +8,10 @@ class SingularSolution < Formula
   depends_on "openjdk"
 
   def install
-    rm_f Dir["bin/*.bat"]
+    rm(Dir["bin/*.bat"])
     libexec.install %w[bin lib]
     (bin/"singular-solution").write_env_script libexec/"bin/singular-solution",
-      :JAVA_HOME => "${JAVA_HOME:-#{Formula["openjdk"].opt_prefix}}"
+      JAVA_HOME: "${JAVA_HOME:-#{Formula["openjdk"].opt_prefix}}"
   end
 
   test do

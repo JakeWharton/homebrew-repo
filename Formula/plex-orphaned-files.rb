@@ -1,5 +1,5 @@
 class PlexOrphanedFiles < Formula
-  desc "Find files in your Plex libraries which are not indexed by Plex."
+  desc "Find files in your Plex libraries which are not indexed by Plex"
   homepage "https://github.com/JakeWharton/plex-orphaned-files"
   url "https://github.com/JakeWharton/plex-orphaned-files/releases/download/1.1.1/plex-orphaned-files.zip"
   version "1.1.1"
@@ -8,10 +8,10 @@ class PlexOrphanedFiles < Formula
   depends_on "openjdk"
 
   def install
-    rm_f Dir["bin/*.bat"]
+    rm(Dir["bin/*.bat"])
     libexec.install %w[bin lib]
     (bin/"plex-orphaned-files").write_env_script libexec/"bin/plex-orphaned-files",
-      :JAVA_HOME => "${JAVA_HOME:-#{Formula["openjdk"].opt_prefix}}"
+      JAVA_HOME: "${JAVA_HOME:-#{Formula["openjdk"].opt_prefix}}"
   end
 
   test do

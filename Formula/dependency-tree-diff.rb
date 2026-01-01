@@ -1,5 +1,5 @@
 class DependencyTreeDiff < Formula
-  desc "An intelligent diff tool for the output of Gradle's dependencies task"
+  desc "Intelligent diff tool for the output of Gradle's dependencies task"
   homepage "https://github.com/JakeWharton/dependency-tree-diff"
   url "https://github.com/JakeWharton/dependency-tree-diff/releases/download/1.2.1/dependency-tree-diff.jar"
   version "1.2.1"

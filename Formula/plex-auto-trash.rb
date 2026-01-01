@@ -1,5 +1,5 @@
 class PlexAutoTrash < Formula
-  desc "Automatically empty the trash in all of your Plex libraries."
+  desc "Automatically empty the trash in all of your Plex libraries"
   homepage "https://github.com/JakeWharton/plex-auto-trash"
   url "https://github.com/JakeWharton/plex-auto-trash/releases/download/1.0.0/plex-auto-trash.zip"
   version "1.0.0"
@@ -8,10 +8,10 @@ class PlexAutoTrash < Formula
   depends_on "openjdk"
 
   def install
-    rm_f Dir["bin/*.bat"]
+    rm(Dir["bin/*.bat"])
     libexec.install %w[bin lib]
     (bin/"plex-auto-trash").write_env_script libexec/"bin/plex-auto-trash",
-      :JAVA_HOME => "${JAVA_HOME:-#{Formula["openjdk"].opt_prefix}}"
+      JAVA_HOME: "${JAVA_HOME:-#{Formula["openjdk"].opt_prefix}}"
   end
 
   test do

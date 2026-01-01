@@ -1,5 +1,5 @@
 class DependencyWatch < Formula
-  desc "Script to wait for an artifact to appear on Maven Central or to monitor coordinates for new versions"
+  desc "Wait for artifacts on Maven Central and monitor coordinates"
   homepage "https://github.com/JakeWharton/dependency-watch"
   url "https://github.com/JakeWharton/dependency-watch/releases/download/0.7.0/dependency-watch.zip"
   version "0.7.0"
@@ -8,10 +8,10 @@ class DependencyWatch < Formula
   depends_on "openjdk"
 
   def install
-    rm_f Dir["bin/*.bat"]
+    rm(Dir["bin/*.bat"])
     libexec.install %w[bin lib]
     (bin/"dependency-watch").write_env_script libexec/"bin/dependency-watch",
-      :JAVA_HOME => "${JAVA_HOME:-#{Formula["openjdk"].opt_prefix}}"
+      JAVA_HOME: "${JAVA_HOME:-#{Formula["openjdk"].opt_prefix}}"
   end
 
   test do
