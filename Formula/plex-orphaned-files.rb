@@ -2,7 +2,6 @@ class PlexOrphanedFiles < Formula
   desc "Find files in your Plex libraries which are not indexed by Plex"
   homepage "https://github.com/JakeWharton/plex-orphaned-files"
   url "https://github.com/JakeWharton/plex-orphaned-files/releases/download/1.1.1/plex-orphaned-files.zip"
-  version "1.1.1"
   sha256 "909e5f59f2a4ae1aa284f6c29182f43ed1c42a30be89809652c2fd1604066f83"
 
   depends_on "openjdk"

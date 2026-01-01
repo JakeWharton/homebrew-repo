@@ -2,7 +2,6 @@ class AdbEventMirror < Formula
   desc "Mirror the touch/key/button events of one device onto devices in real-time"
   homepage "https://github.com/JakeWharton/adb-event-mirror"
   url "https://github.com/JakeWharton/adb-event-mirror/releases/download/1.0.0/adb-event-mirror.main.kts"
-  version "1.0.0"
   sha256 "ed1e09ac335e73ed193febbfd7748dfbe234c3f02c8054983fa46df5b3589280"
 
   depends_on "kotlin"

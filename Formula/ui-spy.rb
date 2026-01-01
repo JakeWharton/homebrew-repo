@@ -2,7 +2,6 @@ class UiSpy < Formula
   desc "Monitor Ubiquiti Store product availability and send notifications"
   homepage "https://github.com/JakeWharton/ui-spy"
   url "https://github.com/JakeWharton/ui-spy/releases/download/0.2.0/ui-spy.zip"
-  version "0.2.0"
   sha256 "40e9b3f04e7a02c5ab69dae8c21d024ac194757a2b77a9ee84e31f606f8fa4f8"
 
   depends_on "openjdk"

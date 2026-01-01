@@ -2,7 +2,6 @@ class PlexAutoTrash < Formula
   desc "Automatically empty the trash in all of your Plex libraries"
   homepage "https://github.com/JakeWharton/plex-auto-trash"
   url "https://github.com/JakeWharton/plex-auto-trash/releases/download/1.0.0/plex-auto-trash.zip"
-  version "1.0.0"
   sha256 "8d2f8675d8647bfc182267bf181f098af4b45ba44ceaee62ee9b0b4570b91679"
 
   depends_on "openjdk"

@@ -2,7 +2,6 @@ class Diffuse < Formula
   desc "Tool for diffing APKs, AABs, AARs, and JARs"
   homepage "https://github.com/JakeWharton/diffuse"
   url "https://github.com/JakeWharton/diffuse/releases/download/0.3.0/diffuse-0.3.0.zip"
-  version "0.3.0"
   sha256 "e297903f8db124e3edb9afe5a92564475b166a7a0acd41ee9e0de745fd772eb3"
 
   depends_on "openjdk"
