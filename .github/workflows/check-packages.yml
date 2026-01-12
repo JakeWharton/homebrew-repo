@@ -35,7 +35,12 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v6
-      - uses: Homebrew/actions/setup-homebrew@main
+      - name: Set up Homebrew Tap
+        run: |
+          brew update-reset "$(brew --repository)"
+          TAP_BASE=$(brew --taps)/${{ github.repository_owner }}
+          mkdir -p $TAP_BASE
+          ln -s $GITHUB_WORKSPACE $TAP_BASE/${{ github.event.repository.name }}
       - name: Check Package
         run: |
           PACKAGE_NAME="$(basename "${{ matrix.packages }}" .rb)"
